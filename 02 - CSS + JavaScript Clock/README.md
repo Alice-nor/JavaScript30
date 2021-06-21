@@ -1,8 +1,9 @@
 
 # 02 CSS + JavaScript Clock ( 2021/06/21 DONE )
 做出一個擺針依照時間會移動的時鐘。
+成果：[JavaScript Clock](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/index.html)
 
-##CSS 筆記##
+## CSS 筆記 ##
 
 **transform-origin** - 為了讓指針轉動，我們需要使用 transform rotate 這個屬性，然而 transform 這個屬性實際上是旋轉自己。但根據真正時鐘的指針，轉的只有一邊，另一邊是定在原地不動的，因此旋轉自己這樣的效果並不是我們想要的。
 
@@ -24,7 +25,7 @@
 
  ![image](https://github.com/Alice-nor/JavaScript30/blob/main/02%20-%20CSS%20%2B%20JavaScript%20Clock/clock.jpg)
 
-##JavaScript 筆記##
+## JavaScript 筆記 ##
 
 
 

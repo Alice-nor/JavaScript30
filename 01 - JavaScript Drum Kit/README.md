@@ -1,8 +1,9 @@
 
 # 01 JavaScript Drum Kit ( 2021/06/18 DONE )
 點擊鍵盤上的 A~L 這一排的按鍵，會發出相對應的聲音。
+成果：[JavaScript Drum Kit](https://alice-nor.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/index.html)
 
-##HTML 筆記
+## HTML 筆記 ##
 
 **keyCode** - 鍵盤上的每一個按鍵都有代表他自己的號碼，像是 A 的 keycode 就是65。
 
@@ -12,7 +13,7 @@
 
 < kbd > - 為行內元素，用來標示鍵盤符號，可以辨別使用者是 input（按下）哪個按鍵。
 
-##JavaScript 筆記
+## JavaScript 筆記 ##
 
 事件監聽時，傳遞事件參數 e ，印出時可以發現 e 中有個 keyCode 的值可以拿來使用，取出按鍵相對應的 keyCode 值，與 HTML 中的 keyCode 吻合時，使用 .play()。
 
