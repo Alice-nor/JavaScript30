@@ -2,7 +2,7 @@
 # 02 CSS + JavaScript Clock ( 2021/06/21 DONE )
 做出一個擺針依照時間會移動的時鐘。
 
-##CSS 筆記
+##CSS 筆記##
 
 **transform-origin** - 為了讓指針轉動，我們需要使用 transform rotate 這個屬性，然而 transform 這個屬性實際上是旋轉自己。但根據真正時鐘的指針，轉的只有一邊，另一邊是定在原地不動的，因此旋轉自己這樣的效果並不是我們想要的。
 
@@ -22,28 +22,10 @@
 
 （ 若在子輩設 margin 或 padding 都不行，雖然這樣設置不會讓子輩與爺爺輩黏在一起，但指針就不是擺在正中央了。擺動時與其他指針交疊時會在後方出現一小腳，除非這是想要的效果再這樣設置會比較好。以下為圖片解說 ）
 
+ ![image](https://github.com/Alice-nor/JavaScript30/blob/main/02%20-%20CSS%20%2B%20JavaScript%20Clock/clock.jpg)
 
-##JavaScript 筆記
+##JavaScript 筆記##
 
-
-
-**audio.currentTime = 0** ，會使用這段是因為，一段音樂實際可能要 2-3 秒才結束，但若我一直按同一個按鍵時，它會有所遲緩，這是因為 “它正在執行中”，要等它結束再次並按同一個按鍵時，他才會發揮功用。要解決此辦法，就是直接在要執行 play 之前，把音檔時間拉回到 0，每一次要執行按鍵時，音檔執行時間都在 0，就可以順利再次發出聲音而不會有所延宕了。
-
-**play()** - HTMLMediaElement.play() 會播放對應的媒體。這個方法會返回一個 Promise，成功播放了就是被解決的狀態（resolved），若失敗了，promise 就是被拒絕的（rejected）。
-
-接著要移除 'playing' 此 class，讓動畫效果在一段時間後消失，我原本不看影片時是使用 setTimeout 。
-
-        <code goes here>
-        setTimeout(function() {
-        key.classList.remove('playing');
-        }, 300)
-
-
-不過發起者是使用 transitionend 這個事件。
-
-**transitionend** - 事件會在 CSS transition 結束後被觸發，它觸發後消失的時間也就跟自身 CSS transition 中的時間有相關了。
-
-PS：全部都做完不知為什麼 class 一直不會自動移除....，找了好久好久，結果發現是把 transform 打成 transition 了啊啊啊啊（昏倒。
 
 
 
