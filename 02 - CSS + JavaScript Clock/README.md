@@ -23,7 +23,7 @@
 
 （ 若在子輩設 margin 或 padding 都不行，雖然這樣設置不會讓子輩與爺爺輩黏在一起，但指針就不是擺在正中央了。擺動時與其他指針交疊時會在後方出現一小腳，除非這是想要的效果再這樣設置會比較好。以下為圖片解說 ）
 
- ![image](https://github.com/Alice-nor/JavaScript30/blob/main/02%20-%20CSS%20%2B%20JavaScript%20Clock/clock.jpg)
+ ![image](https://github.com/Alice-nor/JavaScript30/blob/main/02%20-%20CSS%20%2B%20JavaScript%20Clock/clock.jpg){:height="50%" width="50%"}
 
 ## JavaScript 筆記 ##
 
