@@ -1,5 +1,5 @@
 
-# 01 JavaScript Drum Kit 
+# 01 JavaScript Drum Kit ( 2021/06/18 DONE )
 點擊鍵盤上的 A~L 這一排的按鍵，會發出相對應的聲音。
 
 ##HTML 筆記
