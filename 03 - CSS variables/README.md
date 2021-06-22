@@ -28,4 +28,8 @@
 
 ## 延伸練習 ##
 
-我覺得這個練習很有趣！還蠻意猶未盡的，所以就想多做一個類似的，可以讓使用者自己調整設計的介面網站。以設計出一幅畫的概念，做出這個網站，畫裡的設計元素為我喜歡的素材做出來的，使用者可以調整字體大小、顏色、背景顏色等等。成果：[CSS variables #extend](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/modify.html)
+我覺得這個練習很有趣！還蠻意猶未盡的，所以就想多做一個類似的，可以讓使用者自己調整設計的介面網站。以設計出一幅畫的概念，做出這個網站，畫裡的設計元素為我喜歡的素材做出來的，使用者可以調整字體大小、顏色、背景顏色等等。成果：[CSS variables #extend](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/painting.html)
+
+延伸網站示意圖如下，歡迎來玩看看：）（但我沒做 RWD 手機版....）
+
+![image](https://github.com/Alice-nor/JavaScript30/blob/main/img/designPainting.jpg)
