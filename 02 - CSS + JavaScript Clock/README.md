@@ -1,7 +1,7 @@
 
-# 02 CSS + JavaScript Clock ( 2021/06/21 & 6/22 DONE )
-做出一個擺針依照時間會移動的時鐘。
-成果：[JavaScript Clock](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/index.html)
+# 02 CSS + JavaScript Clock 
+( 2021/06/21 & 6/22 DONE ) 做出一個擺針依照時間會移動的時鐘。
+成果：[JavaScript Clock](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/index.html)調整版：[JavaScript Clock #modify](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/modify.html)
 
 ## CSS 筆記 ##
 
@@ -23,9 +23,7 @@
 
 **transition-timing-function** - 
 
-可以調整 transition 的樣式，還可手動調整成一些奇妙的效果。
-
-作者實際上是使用 transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1)，這樣會有類似擺針彈跳的滴滴滴——效果（這是作者原音效XD）。
+可以調整 transition 的樣式，還可手動調整成一些奇妙的效果。作者實際上是使用 transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1)，這樣會有類似擺針彈跳的滴滴滴——效果（這是作者原音效XD）。
 
 **如何讓指針跟時鐘外圍不要黏在一起？** - 
 
@@ -47,15 +45,14 @@
 
 實作： 
 
-        <code goes here>
         const now = new Date();
         const seconds = now.getSeconds();
         const secondsDegrees = ((seconds / 60) * 360) + 90;
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
-1 / 取得現有秒數
-2 / ( 現有秒數 / 60 ) * 360
-3 / 取得畫面中代表秒針的物件，並設定 style.transfrom 中的 rotate 為現有秒數在圓中所佔的空間 * secondsDegrees 需要加 90 是因為我們原本預設 CSS 樣式為 90deg，現在要多加上 90deg 它實際上呈現的才會是真正時鐘會呈現的樣子（可以用檢查多試試看就知道原理了） *
+* 取得現有秒數
+* ( 現有秒數 / 60 ) * 360
+* 取得畫面中代表秒針的物件，並設定 style.transfrom 中的 rotate 為現有秒數在圓中所佔的空間 * secondsDegrees 需要加 90 是因為我們原本預設 CSS 樣式為 90deg，現在要多加上 90deg 它實際上呈現的才會是真正時鐘會呈現的樣子（可以用檢查多試試看就知道原理了） *
 
 **指針超過12點石，會有個奇怪的跳躍？** - 
 
@@ -64,6 +61,6 @@
 ## 其他自行修改的部分 ##
 
 新增 modify.html。
-我覺得時針分針跟秒針都一樣長短不是很好辨認，因此多一個檔案更改為比較接近我理想中的畫面。另外我對於沒有數字的時鐘也有點看不太懂....所以給時鐘多了有數字的背景圖。
+我覺得時針分針跟秒針都一樣長短不是很好辨認，因此多一個檔案更改為比較接近我理想中的畫面。另外我對於沒有數字的時鐘也有點看不太懂....所以給時鐘多了有數字的背景圖。調整版成果：[JavaScript Clock #modify](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/modify.html)
 
 
