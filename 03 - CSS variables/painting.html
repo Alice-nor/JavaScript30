@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="paintingStyle.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="frame">
+            <div class="wrap">
+                <h1 class="h1">Play<br>it!</h1>
+                <p>Now, God be praised, that to believing souls gives light in darkness, comfort in despair.</p>
+                <img src="../img/stamp.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="controlWrap">
+            <h2>Update CSS Variables with <span class="h1">JS</span></h2>
+
+            <div class="controls">
+
+                <!-- H1 字體顏色 -->
+                <label for="fontColor">Title color:</label>
+                <input type="color" name="fontColor" value="#ffffff">
+                <!-- H1 字體大小 -->
+                <label for="fontSize">Title font-size:</label>
+                <input type="range" name="fontSize" min="70" max="110" value="80" data-sizing="px">
+                <!-- 段落字體顏色 -->
+                <label for="pColor">Paragraph color:</label>
+                <input type="color" name="pColor" value="#e9e9e9">
+                <!-- 郵票大小 -->
+                <label for="stampSize">Stamp Size:</label>
+                <input type="range" name="stampSize" min="100" max="180" value="120" data-sizing="px">
+                <!-- 背景顏色 -->
+                <label for="bgColor">Background Color:</label>
+                <input type="color" name="bgColor" value="#a6937c">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="cssVariable.js"></script>
+</body>
+
+</html>

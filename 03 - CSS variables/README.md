@@ -25,3 +25,7 @@
 [dataset](https://developer.mozilla.org/zh-TW/docs/Web/API/HTMLOrForeignElement/dataset)  就是在 JavaScript #01 第一天時有用到的 data-* ，讓程式設計師可自定義的屬性， dataset 就代表自定義屬性的集合，例如我在一個元件中給它加上屬性 data-size、data-name，我試著印出 dataset 時就會出現 data-size、data-name 這兩個我自定義的屬性！
 
 因此這邊的 dataset 是取得 data-sizing="px" 中 px。
+
+## 延伸練習 ##
+
+我覺得這個練習很有趣！還蠻意猶未盡的，所以就想多做一個類似的，可以讓使用者自己調整設計的介面網站。以設計出一幅畫的概念，做出這個網站，畫裡的設計元素為我喜歡的素材做出來的，使用者可以調整字體大小、顏色、背景顏色等等。成果：[CSS variables #extend](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/modify.html)
