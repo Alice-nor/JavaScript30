@@ -1,7 +1,7 @@
 
 # 02 CSS + JavaScript Clock 
 ( 2021/06/21 & 6/22 DONE ) 做出一個擺針依照時間會移動的時鐘。
-成果：[JavaScript Clock](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/index.html)調整版：[JavaScript Clock #modify](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/modify.html)
+成果：[JavaScript Clock](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/index.html) 調整版：[JavaScript Clock #modify](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/modify.html)
 
 ## CSS 筆記 ##
 
@@ -52,7 +52,7 @@
 
 * 取得現有秒數
 * ( 現有秒數 / 60 ) * 360
-* 取得畫面中代表秒針的物件，並設定 style.transfrom 中的 rotate 為現有秒數在圓中所佔的空間 * secondsDegrees 需要加 90 是因為我們原本預設 CSS 樣式為 90deg，現在要多加上 90deg 它實際上呈現的才會是真正時鐘會呈現的樣子（可以用檢查多試試看就知道原理了） *
+* 取得畫面中代表秒針的物件，並設定 style.transfrom 中的 rotate 為現有秒數在圓中所佔的空間 * secondsDegrees 需要加 90 是因為我們原本預設 CSS 樣式為 90deg，現在要多加上 90deg 它實際上呈現的才會是真正時鐘會呈現的樣子（可以用檢查多試試看就知道原理了）
 
 **指針超過12點石，會有個奇怪的跳躍？** - 
 
