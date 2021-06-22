@@ -25,22 +25,44 @@ body {
     margin: 50px auto;
     position: relative;
     padding: 2rem;
+    background-image: url(clock.png);
+    z-index: 100;
+    background-blend-mode: normal;
+    background-size: cover;
 }
 
 .clock-face {
     width: 100%;
     height: 100%;
     position: relative;
+    /* border: 2px solid green; */
 }
 
 .hand {
     position: absolute;
-    width: 50%;
-    height: 8px;
     border-radius: 10px;
-    top: 50%;
     background-color: whitesmoke;
     transform: rotate(90deg);
     transform-origin: 100%;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.min-hand {
+    width: 50%;
+    height: 8px;
+    top: 50%;
+}
+
+.second-hand {
+    width: 50%;
+    height: 5px;
+    top: 50%;
+}
+
+.hour-hand {
+    /* border: 2px solid goldenrod; */
+    width: 40%;
+    height: 12px;
+    right: 50%;
+    top: 50%;
 }
