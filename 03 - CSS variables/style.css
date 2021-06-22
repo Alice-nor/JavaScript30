@@ -38,7 +38,7 @@ body {
 h2 {
     font-size: 2em;
     font-family: Geneva;
-    margin-bottom: calc(var(--spacing)*2);
+    margin-bottom: 20px;
     letter-spacing: 2px;
 }
 
@@ -57,10 +57,10 @@ input {
 }
 
 img {
-    margin-top: calc(var(--spacing)*3);
+    margin-top: 30px;
     width: 50%;
     height: 50%;
-    border-radius: calc(var(--spacing)*2);
+    border-radius: 20px;
     /* 以下為使用者可調控區 */
     padding: var(--spacing);
     background-color: var(--base);

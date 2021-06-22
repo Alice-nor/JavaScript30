@@ -1,6 +1,6 @@
 
 # 03 CSS variables
-( 2021/6/22 DONE ) 做出一個擺針依照時間會移動的時鐘。
+( 2021/6/22 DONE ) 做出可以讓使用者調整照片邊框間距、顏色與圖片模糊度的網站。
 成果：[CSS variables](https://alice-nor.github.io/JavaScript30/03%20-%20CSS%20variables/index.html) 
 
 ## CSS 筆記 ##
@@ -13,8 +13,6 @@
 * 建議定義在最高層級的 :root 中
 * 宣告變數時是 --變數名稱，例如：--color: brown;
 * 取值時要加入 var，，使用範例：body { background: var(--color) };
-
- ![image](https://github.com/Alice-nor/JavaScript30/blob/main/02%20-%20CSS%20%2B%20JavaScript%20Clock/clock.jpg)
 
 ## JavaScript 筆記 ##
 
