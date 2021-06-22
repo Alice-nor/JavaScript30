@@ -60,7 +60,6 @@ body {
 }
 
 .hour-hand {
-    /* border: 2px solid goldenrod; */
     width: 40%;
     height: 12px;
     right: 50%;

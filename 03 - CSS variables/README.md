@@ -1,7 +1,7 @@
 
 # 03 CSS variables
 ( 2021/6/22 DONE ) 做出一個擺針依照時間會移動的時鐘。
-成果：[JavaScript Clock](https://alice-nor.github.io/JavaScript30/02%20-%20CSS%20+%20JavaScript%20Clock/index.html) 
+成果：[CSS variables](https://alice-nor.github.io/JavaScript30/03%20-%20CSS%20variables/index.html) 
 
 ## CSS 筆記 ##
 
