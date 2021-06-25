@@ -32,7 +32,6 @@ const fifteen = inventors.filter(function(inventor) {
     }
 });
 
-console.log(`---Array.prototype.filter()---`);
 console.table(fifteen);
 
 // Array.prototype.map()
@@ -41,7 +40,6 @@ const fullNames = inventors.map(function(inventor) {
     return `${inventor.first} ${inventor.last}`
 });
 
-console.log(`---Array.prototype.map()---`);
 console.table(fullNames);
 
 // Array.prototype.sort()
@@ -54,7 +52,6 @@ const orderder = inventors.sort(function(firstPerson, secondPerson) {
     }
 });
 
-console.log(`---Array.prototype.sort()---`)
 console.table(orderder);
 
 
@@ -64,7 +61,6 @@ let totalYears = inventors.reduce(function(total, inventor) {
         return total + (inventor.passed - inventor.year);
     }, 0) // 記得給初始值為 0
 
-console.log(`---Array.prototype.reduce()---`)
 console.log(totalYears);
 
 
@@ -77,23 +73,45 @@ let oldest = inventors.sort(function(a, b) {
         return 1;
     }
 })
-
-console.log(`---Sort the inventors by years lived---`)
 console.table(oldest);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
+// 以下為原作者寫法
 // const category = document.querySelector('.mw-category');
 // const links = Array.from(category.querySelectorAll('a'));
 // const de = links
 //     .map(link => link.textContent)
 //     .filter(streetName => streetName.includes('de'));
 
-const li = document.querySelectorAll('.mw-category-group li');
-const de = li.forEach(function(item) {
-    if (item.textContent.includes('de')) {
-        return item.textContent;
-    }
+// 以下為我的寫法
+// const li = document.querySelectorAll('.mw-category-group li');
+// const de = Array.from(li).map(item => item.textContent).filter(item => item.includes('de'));
 
+// 7. sort Exercise
+// Sort the people alphabetically by last name
+// const alpha = people.sort(function(a,b) {
+// });
+
+const alpha = people.sort(function(lastOne, nextOne) {
+    const [aLast, aFirst] = lastOne.split(', ');
+    const [bLast, bFirst] = nextOne.split(', ');
+    return aLast > bLast ? 1 : -1
 })
-console.log(de);
+
+console.log(alpha);
+
+// 8. Reduce Exercise
+// Sum up the instances of each of these
+const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+
+const transportation = data.reduce(function(obj, item) {
+    if (!obj[item]) { // 如果 obj[item] 不存在
+        obj[item] = 0; // 則把 obj[item] 設置為0
+    }
+    obj[item]++ // 如果存在的話，則持續++
+        return obj;
+}, {});
+
+console.log(transportation);
