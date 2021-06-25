@@ -1,7 +1,7 @@
 
 # 04 Array Cardio Day 1
-( 2021/6/24 DONE ) 今天要來練習 array 的一些方法。
-成果：[CSS variables](https://alice-nor.github.io/JavaScript30/03%20-%20CSS%20variables/index.html) 
+( 2021/6/24 & 6/25 DONE ) 今天要來練習 array 的一些方法。
+成果：[Array Cardio Day 1](https://alice-nor.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/index.html) 
 
 看到這邊的練習就想推薦曾經看過的教學：[现代 JavaScript 教程 数组方法](https://zh.javascript.info/array-methods) ，每次看這邊的教學都很花時間，但真的都是很踏實的練習。（雖然偶爾會忘記怎麼使用，但只要回頭看就可以想起來！）
 
