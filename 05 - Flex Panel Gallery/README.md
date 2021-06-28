@@ -23,14 +23,51 @@
 * flex-grow 是在容器內依照比例分配給元件而不會超出。
 * flex-shrink 在元件超出容器時使用，可以讓元件依照比例刪除多餘的部分，而讓元件能裝在容器內不會超出。
 
-（ 這邊原作者並沒有比較特別的使用這個屬性，不用 flex 也可以使用其他方式達到這個效果 ）
+**flex : 直接加上數字** - 
+
+一開始作者在父輩的時候加上了 flex: 1，這是預設，代表說會把多餘的空間平均分配給每一個物件，後來作者使用了 flex: 5，當其他物件平均分配是一個量時，則這邊代表了五個量，是平均的五倍。
+
+**CSS 組合式宣告** - 
+
+作者沒挑出來講，因為這是比較基礎的部分，但我之前比較少這樣使用，因此一開始 CSS 會失效。那麼來說什麼是 CSS 組合式宣告，它不像階層式的告訴你 —— 先到 cointainer 裡的 wrap，再到 wap 裡的 itemA： 
+
+        // 這邊是 HTML
+        <div class="container">
+            <div class="wrap">
+                <div class="itemA">
+                    
+                </div>
+            </div>
+        </div>
+
+        // 這邊是 CSS
+        .container .wrap .itemA { }
+
+組合式宣告則是，同時符合這些條件的選項，沒有階層的概念，不是一層一層下去找，而是同時有這些條件。舉例來說是 —— 我要選到 itemA，接著選到同時是 itemA，也是 wrap，注意！這時候 **每個選取器之間是沒有空格的！**
+
+        // 這邊是 HTML
+        <div class="itemA wrap"></div>
+
+        // 這邊是 CSS
+        .itemA.wrap { }
+
+**box-shadow : inset** - 
+
+因為並沒有照著打，是憑感覺抓自己想要的 CSS，因此打到 box-shadow 時很自然的沒有打上 inset，赫然發現圖片邊邊會出現一點圖片，這讓我覺得很是奇怪，比對之下才發現作者的 box-shadow 有打上 inset。
+
+[box-shadow](https://developer.mozilla.org/zh-TW/docs/Web/CSS/box-shadow) 的 inset，MDN 的英文解釋比較好理解：
+
+> The presence of the inset keyword changes the shadow to one inside the frame (as if the content was depressed inside the box). Inset shadows are drawn inside the border (even transparent ones), above the background, but below content.
+
+它的意思為，inset 是在 border 之內的（即使是透明的 box-shadow），並在背景之下，在內容下面。
+
+因此作者這邊的使用方式就會變成， box-shadow 很像是在內容裡多了一層半透明的邊框，不會影響圖片原本的大小與格式，可以讓每個元件間有個半透明去區分，又不會太過突兀。
 
 ## JavaScript 筆記 ##
 
-**console.table()** - 
+**若這次點擊與上次點擊不同，則關閉上次點擊** - 
 
-第一次知道還有 [Console.table()](https://developer.mozilla.org/zh-CN/docs/Web/API/Console/table) 的用法，實在非常的酷！這個發法會以表格的方式印出結果。
+發現有一個問題，當我點擊現在的 panel 時，接著點擊下一個 panel，上一個已經開啟的 panel 並不會關閉。
 
-**dArray.prototype.reduce()** - 
+我發現有這個問題，沒想到我參照的一位台灣的工程師有寫出他的解法，這邊是他的連結 [05 - Flex Panel Gallery](https://github.com/guahsu/JavaScript30/tree/master/05_Flex-Panel-Gallery) 
 
-！ 這邊提醒，影片中輸出值為 523，但在 github 複製他給予的資料時，結果會是 861 哦！
