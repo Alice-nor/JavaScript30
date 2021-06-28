@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #d4c3ac;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+
+.container {
+    height: 500px;
+    display: flex;
+}
+
+.panels {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.panel {
+    width: 500px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4c3ac;
+    background-repeat: no-repeat;
+    border: 2px solid white;
+    overflow: hidden;
+    flex: 1;
+    /* 字型 */
+    text-align: center;
+    color: white;
+    /* transition 的部分 */
+    transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), background-image 0.5s, background-size 0.5s;
+}
+
+.panel1 {
+    background-image: url(../img/5-01.JPG);
+    background-position: center;
+}
+
+.panel2 {
+    background-image: url(../img/5-02.JPG);
+    background-position: center;
+}
+
+.panel3 {
+    background-image: url(../img/5-03.JPG);
+    background-position: center;
+}
+
+.panel4 {
+    background-image: url(../img/5-04.JPG);
+    background-position: center;
+}
+
+.panel5 {
+    background-image: url(../img/5-05.JPG);
+    background-position: center;
+}
+
+.panel>* {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    transition: all 0.5s;
+}
+
+
+/* 第一個子代 */
+
+.panel>*:first-child {
+    transform: translateY(-150%);
+}
+
+.panel.open-active>*:first-child {
+    transform: translateY(0);
+}
+
+
+/* 最後一個子代 */
+
+.panel>*:last-child {
+    transform: translateY(100%);
+}
+
+.panel.open-active>*:last-child {
+    transform: translateY(0);
+}
+
+.panel h2 {
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+    /* 字型 */
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+.panel p {
+    font-size: .6em;
+    font-family: 'Noto Serif TC', serif;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72);
+}
+
+.panel.open {
+    font-size: 1.3em;
+    position: absolute;
+    height: 99%;
+    background-size: 100%;
+}
+
+.panel.open>p {
+    position: absolute;
+    padding: 30px 0;
+}
+
+
+/* 右邊介紹區 */
+
+
+/* .introductions {
+    width: 45%;
+    background: #d4c3ac;
+} */

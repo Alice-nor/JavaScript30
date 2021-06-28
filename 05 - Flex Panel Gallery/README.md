@@ -71,3 +71,7 @@
 
 我發現有這個問題，沒想到我參照的一位台灣的工程師有寫出他的解法，這邊是他的連結 [05 - Flex Panel Gallery](https://github.com/guahsu/JavaScript30/tree/master/05_Flex-Panel-Gallery) 
 
+## 延伸練習 ##
+
+想說試著做一個延伸練習，雖然感覺不是很成功，但或許以後會再修改，還是先放上來。[Flex Panel Gallery #extend](https://alice-nor.github.io/JavaScript30/03%20-%20CSS%20variables/painting.html)
+
