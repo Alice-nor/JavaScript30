@@ -73,5 +73,5 @@
 
 ## 延伸練習 ##
 
-想說試著做一個延伸練習，雖然感覺不是很成功，但或許以後會再修改，還是先放上來。[Flex Panel Gallery #extend](https://alice-nor.github.io/JavaScript30/03%20-%20CSS%20variables/painting.html)
+想說試著做一個延伸練習，雖然感覺不是很成功，但或許以後會再修改，還是先放上來。[Flex Panel Gallery #extend](https://alice-nor.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/M%E1%BB%B9ThoGuide.html)
 
