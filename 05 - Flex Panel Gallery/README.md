@@ -1,6 +1,6 @@
 
 # 05 - Flex Panel Gallery
-( 2021/6/25 & 6/28 DONE ) 今天要來練習 array 的一些方法。
+( 2021/6/25 & 6/28 DONE ) 整齊排列的物件被點選時，會有一些動畫效果，並把元件放大，其中的文字可以顯現。
 成果：[05 - Flex Panel Gallery](https://alice-nor.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index.html) 
 
 ## CSS 筆記 ##
