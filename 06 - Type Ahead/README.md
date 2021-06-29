@@ -1,7 +1,7 @@
 
 # 06 - Type Ahead
 ( 2021/6/29 DONE ) 使用 fetch，在查詢頁面輸入文字時，會出現相近或推薦的選項。
-成果：[06 - Type Ahead](https://alice-nor.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index.html) 
+成果：[06 - Type Ahead](https://alice-nor.github.io/JavaScript30/06%20-%20Type%20Ahead/index.html) 
 
 ## JavaScript 筆記 ##
 
