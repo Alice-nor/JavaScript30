@@ -1,7 +1,7 @@
 
 # 08 - Fun with HTML5 Canvas
 ( 2021/7/11 DONE ) 操作 HTML5 的 Canvas。
-成果：[08 - Fun with HTML5 Canvas](https://alice-nor.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index.html) 
+成果：[08 - Fun with HTML5 Canvas](https://alice-nor.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index.html) 
 
 ## JavaScript 筆記 ##
 
