@@ -1,7 +1,7 @@
 
 # 07 - Array Cardio Day 2
-( 2021/7/11 DONE ) 使用 fetch，在查詢頁面輸入文字時，會出現相近或推薦的選項。
-成果：[07 - Array Cardio Day 2](https://alice-nor.github.io/JavaScript30/06%20-%20Type%20Ahead/index.html) 
+( 2021/7/11 DONE ) 今天要來練習 array 的一些方法。
+成果：[07 - Array Cardio Day 2](https://alice-nor.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index.html) 
 
 ## JavaScript 筆記 ##
 
