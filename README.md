@@ -12,6 +12,7 @@ NO | 主題 | Demo | 延伸練習
 05  | Flex Panel Gallery  | [DEMO](https://alice-nor.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/index.html) | [延伸練習](https://alice-nor.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/M%E1%BB%B9ThoGuide.html)
 06  | Type Ahead  | [DEMO](https://alice-nor.github.io/JavaScript30/06%20-%20Type%20Ahead/index.html) |
 07  | Array Cardio Day 2  | [DEMO](https://alice-nor.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/index.html) | 
-08  | Fun with HTML5 Canvas  | [DEMO](https://alice-nor.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index.html) | 
+08  | Fun with HTML5 Canvas  | [DEMO](https://alice-nor.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index.html) |
+09  | Dev Tools Domination  | [DEMO](https://alice-nor.github.io/JavaScript30/09%20-%20Dev%20Tools%20Domination/index.html)  
 
 
