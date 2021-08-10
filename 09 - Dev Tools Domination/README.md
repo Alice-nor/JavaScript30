@@ -1,7 +1,7 @@
 
 # 09 - Dev Tools Domination
 ( 2021/8/09 DONE ) Dev Tool 的操作與一些好用的 console 方法
-成果：[09 - Dev Tools Domination](https://alice-nor.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index.html) 
+成果：[09 - Dev Tools Domination](https://alice-nor.github.io/JavaScript30/09%20-%20Dev%20Tools%20Domination/index.html) 
 
 ## JavaScript 筆記 ##
 

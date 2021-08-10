@@ -1,7 +1,7 @@
 
 # 10 - Hold Shift and Check Checkboxes
 ( 2021/8/10 DONE ) 勾選一個項目，接著按著 shift 時，不管點選項目上或下的其他項目，都可以全部選取到，類似 gmail 會有的功能。
-成果：[10 - Hold Shift and Check Checkboxes](https://alice-nor.github.io/JavaScript30/08%20-%20Fun%20with%20HTML5%20Canvas/index.html) 
+成果：[10 - Hold Shift and Check Checkboxes](https://alice-nor.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index.html) 
 
 ## CSS 筆記 ##
 
