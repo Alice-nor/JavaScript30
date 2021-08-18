@@ -1,7 +1,7 @@
 
 # 11 - Custom Video Player
 ( 2021/8/18 DONE ) 自訂影片控制器。
-成果：[11 - Custom Video Player](https://alice-nor.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index.html) 
+成果：[11 - Custom Video Player](https://alice-nor.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/index.html) 
 
 ## CSS 筆記 ##
 
