@@ -34,3 +34,5 @@
         return flag;
     }
 ```
+我是用影片去呈現搭配成功的結果，不過影片錄得有點盪，又有點懶得錄了（因為錄了好幾次都不太好），就先這樣了！成果：[Key Sequence Detection #extend](https://alice-nor.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/mapleStory.html)
+
