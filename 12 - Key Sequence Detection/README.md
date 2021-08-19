@@ -9,7 +9,7 @@
 今天的內容比較多是之前已經學過的內容。感覺很適合做其他的延伸。
 只有下面這一行要思考久一點我才比較理解....。
 
-```
+```JavaScript
     // 不超出密碼之長度，並堆疊換掉第一個元素
     // 這邊是 splice(-8, 0)，也就是刪去陣列中第 0 個數值
     pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
