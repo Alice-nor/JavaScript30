@@ -16,6 +16,7 @@
 
 這邊的 Interpolated 指的是[字串格式化](https://openhome.cc/Gossip/Python/StringFormat.html) （雖然此文是 python 的介紹，但用法是差不多的，所以也可以看此文），但因為後來 JavaScript 有了 [Interpolated 樣板字面值](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Template_literals) 的使用方法，可直接使用 `` ，是更直覺也更直觀的方法，所以現在在 JavaScript 應該是比較少使用字串格式化的。
 
+```JavaScript
         console.log('Hello I am a %s string!', '💩');
         // %s 是使用字串方式輸出，會從後方找到參數帶入
         // 因此會印出 Hello I am a 💩 string!'
@@ -26,6 +27,7 @@
         text-shadow: 10px 10px 0 blue');
         // %c 比較不同的是，他對應的是 CSS 的格式
         // %c 要擺放在最前面，並會抓取後方的格式套用
+```
 
 
 **console.assert()** - 

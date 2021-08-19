@@ -31,25 +31,27 @@
 
 作者沒挑出來講，因為這是比較基礎的部分，但我之前比較少這樣使用，因此一開始 CSS 會失效。那麼來說什麼是 CSS 組合式宣告，它不像階層式的告訴你 —— 先到 cointainer 裡的 wrap，再到 wap 裡的 itemA： 
 
-        // 這邊是 HTML
-        <div class="container">
-            <div class="wrap">
-                <div class="itemA">
-                    
-                </div>
+```html
+    <div class="container">
+        <div class="wrap">
+            <div class="itemA">
+                
             </div>
         </div>
-
-        // 這邊是 CSS
-        .container .wrap .itemA { }
+    </div>
+```
+```css
+    .container .wrap .itemA { }
+```
 
 組合式宣告則是，同時符合這些條件的選項，沒有階層的概念，不是一層一層下去找，而是同時有這些條件。舉例來說是 —— 我要選到 itemA，接著選到同時是 itemA，也是 wrap，注意！這時候 **每個選取器之間是沒有空格的！**
 
-        // 這邊是 HTML
-        <div class="itemA wrap"></div>
-
-        // 這邊是 CSS
-        .itemA.wrap { }
+```html
+    <div class="itemA wrap"></div>
+```
+```css
+    .itemA.wrap { }
+```
 
 **box-shadow : inset** - 
 

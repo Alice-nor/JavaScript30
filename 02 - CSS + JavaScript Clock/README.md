@@ -44,11 +44,12 @@
 觀念：取得現在的秒數後，要先除以 60，就會在知道目前秒數在 一分鐘 60 秒鐘占了多少位子，接著乘以 360，因為一整個圓為 360度，讓秒數可以依所佔的空間平均分配在一整個圓當中。 
 
 實作： 
-
+```JavaScript
         const now = new Date();
         const seconds = now.getSeconds();
         const secondsDegrees = ((seconds / 60) * 360) + 90;
         secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+```
 
 * 取得現有秒數
 * ( 現有秒數 / 60 ) * 360

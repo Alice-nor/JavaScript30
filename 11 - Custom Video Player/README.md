@@ -13,9 +13,11 @@
 
 [::-webkit-slider-runnable-track](https://developer.mozilla.org/zh-CN/docs/Web/CSS/::-webkit-slider-runnable-track) 在 type 為 range 的 input 標籤內中的，可滑動的區域。使用方法如下：
 
-        input[type=range]::-webkit-slider-runnable-track {
-            // 想要修改滑動區域的 code.....
-        }
+```JavaScript
+    input[type=range]::-webkit-slider-runnable-track {
+        // 想要修改滑動區域的 code.....
+    }
+```
 
 特別的地方在於，這是 chrome/ safari 瀏覽器內核特有的。其他瀏覽器功能類似的偽類為： ::-ms-track、::moz-range-track 。
 
@@ -24,10 +26,12 @@
 
 [::-webkit-slider-thumb](https://developer.mozilla.org/zh-CN/docs/Web/CSS/::-webkit-slider-thumb) 是針對拉霸按鈕，重點在一定要跟 ::-webkit-slider-runnable-track 一起搭配使用，否則會沒有效果。使用方法如下：
 
-        input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none; // 把原本預設樣式消除
-            // 其他的 code....
-        }
+```JavaScript
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none; // 把原本預設樣式消除
+        // 其他的 code....
+    }
+```
 
 這個偽類別也是 chrome/ safari 瀏覽器內核特有的。其他瀏覽器功能類似的偽類為： ::-moz-range-thumb、::-ms-thumb 。
 
@@ -43,23 +47,27 @@ JavaScript 沒有屬性去檢驗影片是否播放中，但相反的有檢驗是
 
 我覺得這個方法真的不是很直覺，有點難閱讀跟看懂，所以我使用的是比較簡單的方法，但，以下是作者的寫法：
 
-        function togglePlay() {
-            const method = video.paused ? 'play' : 'pause';
-            video[method]();
-        }
+```JavaScript
+    function togglePlay() {
+        const method = video.paused ? 'play' : 'pause';
+        video[method]();
+    }
+```
 
 更換 icon 的方式有比較簡潔的做法，因為我不是很喜歡 innerHTML 這個使用方法，所以改寫成比較冗長一點的（可點程式碼看），下面是我原本寫的方式：
 
-        function togglePlay() {
-            const icon = video.paused? `<i class="icon fa fa-play">` : `<i class="icon fa fa-pause">`
-            if (video.paused) {
-                video.play();
-                toggle.innerHTML = icon;
-            } else {
-                video.pause();
-                toggle.innerHTML = icon;
-            }
+```JavaScript
+    function togglePlay() {
+        const icon = video.paused? `<i class="icon fa fa-play">` : `<i class="icon fa fa-pause">`
+        if (video.paused) {
+            video.play();
+            toggle.innerHTML = icon;
+        } else {
+            video.pause();
+            toggle.innerHTML = icon;
         }
+    }
+```
 
 
 **不論是按箭頭或是影片本身，都可以操控播放或暫停** -

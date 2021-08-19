@@ -31,10 +31,12 @@ HTMLMediaElement.play() 會播放對應的媒體。這個方法會返回一個 P
 
 接著要移除 'playing' 此 class，讓動畫效果在一段時間後消失，我原本不看影片時是使用 setTimeout 。
 
+```JavaScript
         <code goes here>
         setTimeout(function() {
         key.classList.remove('playing');
         }, 300)
+```
 
 
 不過發起者是使用 transitionend 這個事件。

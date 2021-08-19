@@ -16,7 +16,9 @@
 
 ## JavaScript 筆記 ##
 
+```JavaScript
         const inputs = document.querySelectorAll('.controls input');
+```
 
 要注意的是，這邊的 inputs 看起來或許很像 array（陣列），然而它並不是，實際上他是 NodeList。（可以從右鍵檢查裡的 _proto_ 發現他寫的是 NodeList，實際點開 NodeList 也會發現裡頭缺少了 array 會有的一些方法，像是 reduce、map 等等，但這邊並不會有，所以可以知道 inputs 確實不是 array。
 

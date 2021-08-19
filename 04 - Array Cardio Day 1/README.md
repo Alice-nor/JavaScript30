@@ -15,8 +15,10 @@
 
 練習到這邊的時候，輸出的竟然是 [object Object]7690678950803784597870 ， WHAT？這什麼詭異的答案！原來是因為一開始沒有給初始值，所以第一個值是 undefined，後面就會變成字串加減，因此全部連在一起了....這邊只要在初始值給 0 就可以解決了！
 
+```JavaScript
         let value = arr.reduce(function(accumulator, item, index, array) {
         // ...
         }, [initial]); // 這邊要記得給 initial 初始值為 0
+```
 
 ！ 這邊提醒，影片中輸出值為 523，但在 github 複製他給予的資料時，結果會是 861 哦！
