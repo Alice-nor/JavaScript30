@@ -15,4 +15,22 @@
     pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
 ```
 
+## 延伸練習 ##
 
+最近很常玩楓之谷，所以想來個楓之谷版本的練習！遇到的問題是，不太清楚如何讓陣列與陣列去做比對，要順序與內容都完全相同！後來找到以下可行的方法。參考的內容：[JavaScript比较两个数组的内容是否相同](https://blog.csdn.net/weixin_34081595/article/details/88755033?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-1.control&spm=1001.2101.3001.4242) 
+
+```JavaScript
+    function check(arr1, arr2) {
+        let flag = true;
+        if (arr1.length !== arr2.length) {
+            flag = false;
+        } else {
+            for (let i = 0; i < arr1.length; i++) {
+                if (arr1[i] !== arr2[i]) {
+                    flag = false;
+                }
+            }
+        }
+        return flag;
+    }
+```

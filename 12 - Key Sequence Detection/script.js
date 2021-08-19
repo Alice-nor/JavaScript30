@@ -15,4 +15,5 @@ window.addEventListener('keyup', (e) => {
         cornify_add();
     }
     console.log(pressed);
+    document.querySelector('.inputText').innerHTML = pressed.join(' ');
 })
