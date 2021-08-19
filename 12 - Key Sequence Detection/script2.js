@@ -17,7 +17,6 @@ function check(arr1, arr2) {
 }
 
 
-
 window.addEventListener('keyup', (e) => {
 
     // 不超出密碼之長度，並堆疊換掉第一個元素
@@ -41,7 +40,6 @@ window.addEventListener('keyup', (e) => {
             break;
     }
 
-
     // 檢驗輸入內容是否完全符合 secretCode
     if (!check(pressedName, secretCode)) {
         console.log('不相符');
@@ -52,9 +50,6 @@ window.addEventListener('keyup', (e) => {
         video.classList.remove('disappear');
 
     }
-
-
-
 
     console.log(pressedName);
     document.querySelector('.inputText').innerHTML = pressedName.join(' ');
