@@ -1,7 +1,7 @@
 
 # 13 - Slide in on Scroll
 ( 2021/8/20 DONE ) 畫面滑到定點時，圖片會以動畫的方式滑入。
-成果：[13 - Slide in on Scroll](https://alice-nor.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/index.html) 
+成果：[13 - Slide in on Scroll](https://alice-nor.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index.html) 
 
 
 ## JavaScript 筆記 ##

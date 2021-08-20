@@ -17,4 +17,5 @@ NO | 主題 | Demo | 延伸練習
 10  | Hold Shift and Check Checkboxes  | [DEMO](https://alice-nor.github.io/JavaScript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/index.html)  
 11  | Custom Video Player  | [DEMO](https://alice-nor.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/index.html)  
 12  | Key Sequence Detection  | [DEMO](https://alice-nor.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/index.html) | [延伸練習](https://alice-nor.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/mapleStory.html)  
+13  | Slide in on Scroll  | [DEMO](https://alice-nor.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index.html)  
 
