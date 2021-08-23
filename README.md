@@ -18,4 +18,5 @@ NO | 主題 | Demo | 延伸練習
 11  | Custom Video Player  | [DEMO](https://alice-nor.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/index.html)  
 12  | Key Sequence Detection  | [DEMO](https://alice-nor.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/index.html) | [延伸練習](https://alice-nor.github.io/JavaScript30/12%20-%20Key%20Sequence%20Detection/mapleStory.html)  
 13  | Slide in on Scroll  | [DEMO](https://alice-nor.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index.html)  
+14  | JavaScript References VS Copying  | [DEMO](https://alice-nor.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/index.html)  
 

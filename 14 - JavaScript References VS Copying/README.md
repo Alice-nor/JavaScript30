@@ -1,7 +1,7 @@
 
 # 14 - JavaScript References VS Copying
 ( 2021/8/23 DONE ) 理解陣列與物件的引用（reference）與複製（copy）。理解傳值不傳址，以及傳址不傳值，以及深入複製的方式。
-成果：[14 - JavaScript References VS Copying](https://alice-nor.github.io/JavaScript30/13%20-%20Slide%20in%20on%20Scroll/index.html) 
+成果：[14 - JavaScript References VS Copying](https://alice-nor.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/index.html) 
 
 
 ## JavaScript 筆記 ##
