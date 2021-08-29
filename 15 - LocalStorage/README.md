@@ -1,7 +1,7 @@
 
 # 15 - LocalStorage
 ( 2021/8/23 & 28 DONE ) 實作模擬菜單的網頁，可在頁面中新增項目，頁面重整後也不會清空。  
-成果：[15 - LocalStorage](https://alice-nor.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/index.html) 
+成果：[15 - LocalStorage](https://alice-nor.github.io/JavaScript30/15%20-%20LocalStorage/index.html) 
 
 
 ## HTML 筆記 ##
@@ -180,4 +180,13 @@ Application -> 最左邊有個 local storage。
 ```
 
 ## 延伸練習 ##
+
+接著練習作者提到的，做出兩個按鈕——全部清空與全部 checked。  
+實作起來蠻簡單的，只是把 localStorage 清空時，  
+畫面的呈現還是跟原本的一樣，最後我多用了一個 refresh 的 function，  
+讓畫面在一秒後會自動重整，才會呈現正常已清空的畫面。  
+
+覺得這個練習很適合做 todolist，剛好我也沒做過 todolist，  
+因此想趁此機會練習使用 localStorage 做出一個 todolist。
+
 
