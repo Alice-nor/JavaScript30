@@ -60,8 +60,9 @@
 > 延伸練習圖片：Photo by [Jennifer Latuperisa-Andresen](https://unsplash.com/@fraumuksch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 雖然跟我意想不太一樣，但玩出了我自己蠻喜歡的效果！開心！
+延伸練習網址：[North Pole](https://alice-nor.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/extend.html) 
 
- ![image](https://github.com/Alice-nor/JavaScript30/blob/main/img/clock.jpg)
+ ![image](https://github.com/Alice-nor/JavaScript30/blob/main/img/16-02.gif)
 
   
 
