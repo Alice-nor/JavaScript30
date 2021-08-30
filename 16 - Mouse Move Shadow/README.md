@@ -53,6 +53,16 @@
 
 ## 延伸練習 ##
 
+曾經在一些官方網站看過類似這樣的設計，  
+官方網站的 logo 會隨著滑鼠而有一些移動，  
+因此這次的延伸練習就做這樣的網站試試看！  
 
+> 延伸練習圖片：Photo by [Jennifer Latuperisa-Andresen](https://unsplash.com/@fraumuksch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+雖然跟我意想不太一樣，但玩出了我自己蠻喜歡的效果！開心！
+
+ ![image](https://github.com/Alice-nor/JavaScript30/blob/main/img/clock.jpg)
+
+  
 
 
