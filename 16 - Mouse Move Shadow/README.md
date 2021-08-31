@@ -1,6 +1,6 @@
 
 # 16 - Mouse Move Shadow
-> 2021/30 DONE  
+> 2021/8/30 DONE  
 讓文字的陰影會隨著滑鼠的移動而偏移。  
 成果：[16 - Mouse Move Shadow](https://alice-nor.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index.html) 
 
