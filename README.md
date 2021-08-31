@@ -21,3 +21,4 @@ NO | 主題 | Demo | 延伸練習
 14  | JavaScript References VS Copying  | [DEMO](https://alice-nor.github.io/JavaScript30/14%20-%20JavaScript%20References%20VS%20Copying/index.html)  
 15  | LocalStorage  | [DEMO](https://alice-nor.github.io/JavaScript30/15%20-%20LocalStorage/index.html)  
 16  | Mouse Move Shadow  | [DEMO](https://alice-nor.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index.html) | [延伸練習](https://alice-nor.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/extend.html) 
+17  | Sort Without Articles  | [DEMO](https://alice-nor.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index.html)  

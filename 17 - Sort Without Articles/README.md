@@ -2,7 +2,7 @@
 # 17 - Sort Without Articles
 > 2021/8/31 DONE  
 在陣列中排除部分的文字，並進行排序。
-成果：[17 - Sort Without Articles](https://alice-nor.github.io/JavaScript30/16%20-%20Mouse%20Move%20Shadow/index.html) 
+成果：[17 - Sort Without Articles](https://alice-nor.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index.html) 
 
 
 ## JavaScript 筆記 ##
