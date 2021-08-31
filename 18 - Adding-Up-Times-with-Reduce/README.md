@@ -2,7 +2,7 @@
 # 18 - Adding-Up-Times-with-Reduce
 > 2021/8/31 DONE  
 使用 map()、reduce() 方法取得播放清單的總秒數。
-成果：[18 - Adding-Up-Times-with-Reduce](https://alice-nor.github.io/JavaScript30/17%20-%20Sort%20Without%20Articles/index.html) 
+成果：[18 - Adding-Up-Times-with-Reduce](https://alice-nor.github.io/JavaScript30/18%20-%20Adding-Up-Times-with-Reduce/index.html) 
 
 
 ## JavaScript 筆記 ##
