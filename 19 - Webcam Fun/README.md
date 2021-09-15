@@ -2,7 +2,7 @@
 # 19 - Webcam Fun
 > 2021/9/10 & 15 DONE  
 取得視訊鏡頭的影像，並透過 canvas 達成拍攝與濾鏡的效果。
-成果：[19 - Webcam Fun](https://alice-nor.github.io/JavaScript30/18%20-%20Adding-Up-Times-with-Reduce/index.html) 
+成果：[19 - Webcam Fun](https://alice-nor.github.io/JavaScript30/19%20-%20Webcam%20Fun/index.html) 
 
 ## local server 筆記 ##
 
