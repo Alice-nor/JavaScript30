@@ -69,7 +69,7 @@
 
 > Note: As of March 2020, only Safari supports setting objects other than MediaStream. Until other browsers catch up, for MediaSource, Blob and File, consider falling back to creating a URL with `URL.createObjectURL()` and assign it to `HTMLMediaElement.src`. 
 
-#### 把視訊的影像畫在 canvas 畫布上
+#### 把視訊的影像輸出在 canvas 畫布上
 
 1. 把 canvas 長寬設定為影片長寬
 2. 每 16 毫秒會更新一次 canvas 畫布
@@ -91,14 +91,16 @@
 
 作者有提到可以使用 [Window.requestAnimationFrame()](https://developer.mozilla.org/zh-TW/docs/Web/API/window/requestAnimationFrame)，  
 不過作者沒有寫出來，我就研究了一下這個方法，  
-發現這個方法比原本的 `setTimeout()` 跟 `setInterval()` 效率都要好，  
-推薦閱讀：[深入理解requestAnimationFrame的動畫迴圈](https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/260087/)。  
-比較重要的點在於要建立迴圈，就要把呼叫連起來。  
+發現這個方法比原本的 `setTimeout()` 跟 `setInterval()` 效率都要好。  
+以下是 `requestAnimationFrame()` 的重點。  
+
 >  1. 就算很多個requestAnimationFrame()要執行，瀏覽器只要通知一次就可以了。而setTimeout是多個獨立繪製。
 > 2. 一旦頁面不出於當前頁面(比如：頁面最小化了)，頁面是不會進行重繪的，自然requestAnimationFrame也不會觸發(因為沒有通知)。頁面繪製全部停止，資源高效利用。
+> 來源：[深入理解requestAnimationFrame的動畫迴圈](https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/260087/)。  
 
 ```JavaScript
 
+    // 建立迴圈要把呼叫連起來
     function drawFrame() {
     window.requestAnimationFrame(drawFrame);
     // animation code...
@@ -111,16 +113,52 @@
 
 ```JavaScript
 
-    function animation() {
+    function paintToCanvas() {
         const width = video.videoWidth;
         const height = video.videoHeight;
         canvas.width = width;
         canvas.height = height;
 
         ctx.drawImage(video, 0, 0, width, height);
-        requestAnimationFrame(animation);
+        requestAnimationFrame(paintToCanvas);
+
     }
 
-    requestAnimationFrame(animation);
+    // 不過後面程式碼會自動一直呼叫，所以下面這段可以省略
+    requestAnimationFrame(paintToCanvas);
 
 ```
+
+#### 視訊影像已緩衝好時，將自動播放
+
+這邊用到了一個叫 `canplay` 的 event。
+
+> The `canplay` event is fired when the user agent can play the media, but estimates that not enough data has been loaded to play the media up to its end without having to stop for further buffering of content.
+> 來源：[HTMLMediaElement: canplay event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canplay_event)
+
+流程大概是這樣的 ->  
+一開始會先呼叫 `getVideo` 這個方法，  
+方法裡有呼叫影片的程式碼 `video.play()`，  
+那麼當影片開始跑之後，就會觸發 `canplay` 這個 event，  
+接著執行 `paintToCanvas` 這個方法，畫面也就被繪製出來了。
+
+#### 製作拍照功能，並提供下載功能
+
+這部分有幾個方法要來看一下 ->
+
+1. [HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/zh-TW/docs/Web/API/HTMLCanvasElement/toDataURL)
+> canvas.toDataURL(type, encoderOptions);
+> 方法回傳含有圖像和參數設置特定格式的 data URIs (預設 PNG). 回傳的圖像解析度為 96 dpi
+
+從 canvas 取得資料並把它轉換成連結，  
+這邊設定為 `image/jpeg`，則下載的圖片就會是 jpeg 檔。
+
+2. [Element.setAttribute()](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+> Element.setAttribute(name, value);
+
+這邊寫成 `link.setAttribute('download', 'download')`，  
+因此此連結是可以下載的，下載後的檔名會是 download。  
+如果看 HTML 的話，就是在 `a` 超連結裡頭有個 download 的屬性，  
+一整串是 `download="download"`。
+
+3. [Node.insertBefore()](https://developer.mozilla.org/zh-TW/docs/Web/API/Node/insertBefore)
