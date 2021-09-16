@@ -1,7 +1,7 @@
 
 # 19 - Webcam Fun
 > 2021/9/10 & 15 DONE  
-取得視訊鏡頭的影像，並透過 canvas 達成拍攝與濾鏡的效果。
+取得視訊鏡頭的影像，並透過 canvas 達成拍攝與濾鏡的效果。  
 成果：[19 - Webcam Fun](https://alice-nor.github.io/JavaScript30/19%20-%20Webcam%20Fun/index.html) 
 
 ## local server 筆記 ##
@@ -10,6 +10,7 @@
 作者有推薦可以使用 browser-sync，  
 可以使用 npm 去安裝，它會再啟網站時建置伺服器。  
 > npm install browser-sync
+
 > 推薦閱讀：[Gulp 前端自動化 - Browsersync 瀏覽器同步測試工具](https://awdr74100.github.io/2020-01-14-gulp-browsersync/) 
 
 雖然我的電腦有自己的 local server 可以開，  
@@ -61,11 +62,12 @@
 
 [URL.createObjectURL()](https://developer.mozilla.org/zh-TW/docs/Web/API/URL/createObjectURL)。 
 > `objectURL = URL.createObjectURL(blob)`
+
 > 用於建立一個帶有 URL 的 DOMString 以代表參數中所傳入的物件. 該URL的生命週期與創造它的 window 中的 document一致。這個新的物件 URL 代表了所指定的 File 物件 或是 Blob 物件。 
 
 原本作者是使用以下的方法，  
 但主要的瀏覽器像是 Chrome 和 Firefox **已經棄用這個方法了！**
-> [URL.createObjectURL()](https://developer.mozilla.org/zh-TW/docs/Web/API/URL/createObjectURL)
+> 來源：[URL.createObjectURL()](https://developer.mozilla.org/zh-TW/docs/Web/API/URL/createObjectURL)
 
 > Note: As of March 2020, only Safari supports setting objects other than MediaStream. Until other browsers catch up, for MediaSource, Blob and File, consider falling back to creating a URL with `URL.createObjectURL()` and assign it to `HTMLMediaElement.src`. 
 
@@ -96,6 +98,7 @@
 
 >  1. 就算很多個requestAnimationFrame()要執行，瀏覽器只要通知一次就可以了。而setTimeout是多個獨立繪製。
 > 2. 一旦頁面不出於當前頁面(比如：頁面最小化了)，頁面是不會進行重繪的，自然requestAnimationFrame也不會觸發(因為沒有通知)。頁面繪製全部停止，資源高效利用。
+
 > 來源：[深入理解requestAnimationFrame的動畫迴圈](https://codertw.com/%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC/260087/)。  
 
 ```JavaScript
@@ -134,6 +137,7 @@
 這邊用到了一個叫 `canplay` 的 event。
 
 > The `canplay` event is fired when the user agent can play the media, but estimates that not enough data has been loaded to play the media up to its end without having to stop for further buffering of content.
+
 > 來源：[HTMLMediaElement: canplay event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/canplay_event)
 
 流程大概是這樣的 ->  
@@ -148,6 +152,7 @@
 
 1. [HTMLCanvasElement.toDataURL()](https://developer.mozilla.org/zh-TW/docs/Web/API/HTMLCanvasElement/toDataURL)
 > canvas.toDataURL(type, encoderOptions);
+
 > 方法回傳含有圖像和參數設置特定格式的 data URIs (預設 PNG). 回傳的圖像解析度為 96 dpi
 
 從 canvas 取得資料並把它轉換成連結，  
