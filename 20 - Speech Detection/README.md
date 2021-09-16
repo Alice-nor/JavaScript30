@@ -2,7 +2,7 @@
 # 20 - Speech Detection
 > 2021/9/16 DONE  
 語音辨識系統。
-成果：[20 - Speech Detection](https://alice-nor.github.io/JavaScript30/19%20-%20Webcam%20Fun/index.html) 
+成果：[20 - Speech Detection](https://alice-nor.github.io/JavaScript30/20%20-%20Speech%20Detection/index.html) 
 
 
 ## JavaScript 筆記 ##
