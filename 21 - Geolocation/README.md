@@ -1,87 +1,23 @@
 
-# 20 - Speech Detection
+# 21 - Geolocation
 > 2021/9/16 DONE  
-語音辨識系統。
-成果：[20 - Speech Detection](https://alice-nor.github.io/JavaScript30/20%20-%20Speech%20Detection/index.html) 
+取得裝置的地理位置與速率。
+成果：[21 - Geolocation](https://alice-nor.github.io/JavaScript30/20%20-%20Speech%20Detection/index.html) 
 
+
+#### 感知速度與方向
+
+這邊作者有提到，電腦並不帶有速度與方向感知的功能，  
+`heading` 與 `speed` 的值均為 null，  
+所以作者使用 ios 的模擬器，用 mac 裡的 Xcode 做測試，  
+或是可以用手機測試，  然後帶著手機實際走看看有沒有發生改變 XD
 
 ## JavaScript 筆記 ##
 
 #### 瀏覽器內建之語音辨識
 
-[SpeechRecognition](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition) 這個方法提供語音辨識，  
-不過這個還是開發中的技術，兼容性也不是很大.....。  
-像是 Chrome 這樣的瀏覽器，如果網路沒有連線的話，  
-語音辨識系統是不可用的，因為音檔是需要傳送到網路伺服器做辨認的。
-
-接著 `SpeechRecognition` 有個方法 [interimResults](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/interimResults)，  
-這個方法是講話的過程中辨認在說什麼，並且返回它的值，  
-如果是 false 的話，我們講完一段話需要停頓，  
-直到語音辨識系統打出我們說的話，才可以知道是否正確，  
-但這其實不是很友善，應該是我們正在講話時，  
-語音辨識就直接顯示給我們看結果（辨識中可能一直變換結果），  
-而不需要停頓等它打完，去掉這個比較多餘的動作。   
-
-```JavaScript
-    // 講話時字串就會跑出來
-    recognition.interimResults = true;
-```
-
-#### 講完話會自動分段
-
-這邊要做的事情是，當我們講完話後，    
-會在原本的 `p` 片段後面再新增一個 `p`，  
-接著再說新的語音時，會把內容寫進最後面的 `p` 中。
-
-```JavaScript
-    // 這邊主要是在操作 HTML 的部分
-    let p = document.createElement('p');
-    const words = document.querySelector('.words');
-    words.appendChild(p);
-```
-
-#### 開始說話並觸發 event
-
-`SpeechRecognition` 有提供一個 `result event`，  
-它會偵測辨識系統現在是否有返回聲音，  
-如果有的話就會執行 event 裡的內容。
-
-> Fired when the speech recognition service returns a result — a word or phrase has been positively recognized and this has been communicated back to the app. Also available via the onresult property.
-> 參閱：[result event](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/result_event)
-
-接著搭配使用 `start event`，  
-它會詢問使用者是否要開啟麥克風，  
-如果沒有使用 `start event`，或沒有開啟麥克風，  
-  `SpeechRecognition` 是毫無用武之地的。
-
-> Fired when the speech recognition service returns a result — a word or phrase has been positively recognized and this has been communicated back to the app. Also available via the onresult property.
-> 參閱：[start event](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition/start_event)
-
-#### 抓取辨識完成的資料
-
-語音辨識的物件有點繞，各種套來套去的，  
-所以需要 `map` 兩遍....。  
-
-```JavaScript
-    recognition.addEventListener('result', e => {
-    const transcript = Array.from(e.results)
-        .map(result => result[0])
-        .map(result => result.transcript)
-        .join(''); // 把多個物件連接在一起變成一個物件
-    });
-```
-
-#### 修正語音辨認一次後就不再監聽的問題
-
-實際操作後會發現，語音辨認完成之後，  
-若再次語音，`result event` 並沒有繼續監聽，  
-event 到這邊就結束了！這是因為 `result event` 已完成它的任務了，  
-我們需要搭配 `end event`，當使用者不再說話時，  就會觸發 `end event`，  
-我們又再 `end event` 裡再次呼叫 `recognition.start`，  
-這樣的話就會一直持續的聽取使用者是否有在說話，而不會間斷了。
-
-
-```JavaScript
-    recognition.addEventListener('end', recognition.start);
-```
-
+作者這邊使用 [Geolocation.watchPosition()](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/watchPosition) 這個方法取取得裝置的位置資料，  
+這個方法是當使用者位置有更新時，就會被自動呼叫的方式，  
+還有另一個方法也可以取得裝置位置資料：[Geolocation.getCurrentPosition()](https://developer.mozilla.org/zh-TW/docs/Web/API/Geolocation/getCurrentPosition)，  
+但 `getCurrentPosition` 只會給一次位置資料而已，  
+但我們這邊的需求是位置資料會一直被更新，所以使用 `watchPosition()`。
