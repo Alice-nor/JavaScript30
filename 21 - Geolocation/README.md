@@ -2,7 +2,7 @@
 # 21 - Geolocation
 > 2021/9/16 DONE  
 取得裝置的地理位置與速率。
-成果：[21 - Geolocation](https://alice-nor.github.io/JavaScript30/20%20-%20Speech%20Detection/index.html) 
+成果：[21 - Geolocation](https://alice-nor.github.io/JavaScript30/21%20-%20Geolocation/index.html) 
 
 
 #### 感知速度與方向

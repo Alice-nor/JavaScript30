@@ -25,5 +25,5 @@ NO | 主題 | Demo | 延伸練習
 18  | Adding-Up-Times-with-Reduce  | [DEMO](https://alice-nor.github.io/JavaScript30/18%20-%20Adding-Up-Times-with-Reduce/index.html)  
 19  | Webcam Fun  | [DEMO](https://alice-nor.github.io/JavaScript30/19%20-%20Webcam%20Fun/index.html)  
 20  | Speech Detection  | [DEMO](https://alice-nor.github.io/JavaScript30/20%20-%20Speech%20Detection/index.html)  
-21  | Geolocation  | [DEMO](https://alice-nor.github.io/JavaScript30/21 - Geolocation/index.html)  
+21  | Geolocation  | [DEMO](https://alice-nor.github.io/JavaScript30/21%20-%20Geolocation/index.html)  
 
