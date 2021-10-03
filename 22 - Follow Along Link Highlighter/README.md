@@ -1,8 +1,8 @@
 
 # 22 - Follow Along Link Highlighter
-> 2021/9/16 DONE  
+> 2021/10/3 DONE  
 效果隨著滑鼠移動到 highlight 上而不會中途效果消失。
-成果：[22 - Follow Along Link Highlighter](https://alice-nor.github.io/JavaScript30/21%20-%20Geolocation/index.html) 
+成果：[22 - Follow Along Link Highlighter](https://alice-nor.github.io/JavaScript30/22%20-%20Follow%20Along%20Link%20Highlighter/index.html) 
 
 
 
