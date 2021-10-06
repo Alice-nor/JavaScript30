@@ -1,8 +1,8 @@
 
 # 23 - Speech Synthesis
-> 2021/9/16 DONE  
+> 2021/10/6 DONE  
 使文字轉成語音。
-成果：[23 - Speech Synthesis](https://alice-nor.github.io/JavaScript30/21%20-%20Geolocation/index.html) 
+成果：[23 - Speech Synthesis](https://alice-nor.github.io/JavaScript30/23%20-%20Speech%20Synthesis/index.html) 
 
 
 ## JavaScript 筆記 ##

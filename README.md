@@ -27,5 +27,6 @@ NO | 主題 | Demo | 延伸練習
 20  | Speech Detection  | [DEMO](https://alice-nor.github.io/JavaScript30/20%20-%20Speech%20Detection/index.html)  
 21  | Geolocation  | [DEMO](https://alice-nor.github.io/JavaScript30/21%20-%20Geolocation/index.html)  
 22  | Follow Along Link Highlighter  | [DEMO](https://alice-nor.github.io/JavaScript30/22%20-%20Follow%20Along%20Link%20Highlighter/index.html)  
+23  | Speech Synthesis  | [DEMO](https://alice-nor.github.io/JavaScript30/23%20-%20Speech%20Synthesis/index.html)  
 
 
