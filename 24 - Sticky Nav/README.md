@@ -2,7 +2,7 @@
 # 24 - Sticky Nav
 > 2021/10/23 DONE  
 製作網站的置頂選單。
-成果：[24 - Sticky Nav](https://alice-nor.github.io/JavaScript30/23%20-%20Speech%20Synthesis/index.html) 
+成果：[24 - Sticky Nav](https://alice-nor.github.io/JavaScript30/24%20-%20Sticky%20Nav/) 
 
 
 ## CSS 筆記 ##
