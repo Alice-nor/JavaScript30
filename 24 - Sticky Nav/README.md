@@ -1,6 +1,6 @@
 
 # 24 - Sticky Nav
-> 2021/10/23 DONE  
+> 2021/10/23 DONE（開始上班後就好怠惰QQ）  
 製作網站的置頂選單。
 成果：[24 - Sticky Nav](https://alice-nor.github.io/JavaScript30/24%20-%20Sticky%20Nav/) 
 
