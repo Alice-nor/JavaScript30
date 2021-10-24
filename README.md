@@ -29,5 +29,6 @@ NO | 主題 | Demo | 延伸練習
 22  | Follow Along Link Highlighter  | [DEMO](https://alice-nor.github.io/JavaScript30/22%20-%20Follow%20Along%20Link%20Highlighter/index.html)  
 23  | Speech Synthesis  | [DEMO](https://alice-nor.github.io/JavaScript30/23%20-%20Speech%20Synthesis/index.html)  
 24  | Sticky Nav  | [DEMO](https://alice-nor.github.io/JavaScript30/24%20-%20Sticky%20Nav/)  
+25  | Event Capture, Propagation, Bubbling and Once  | [DEMO](https://alice-nor.github.io/JavaScript30/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/)  
 
 

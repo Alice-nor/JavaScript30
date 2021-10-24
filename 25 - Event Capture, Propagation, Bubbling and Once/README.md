@@ -2,7 +2,7 @@
 # 25 - Event Capture, Propagation, Bubbling and Once
 > 2021/10/24 DONE  
 了解 `addEventListener` 中事件的捕捉、傳遞、冒泡與單次的執行方法。
-成果：[25 - Event Capture, Propagation, Bubbling and Once](https://alice-nor.github.io/JavaScript30/24%20-%20Sticky%20Nav/) 
+成果：[25 - Event Capture, Propagation, Bubbling and Once](https://alice-nor.github.io/JavaScript30/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/) 
 
 
 
