@@ -2,7 +2,7 @@
 # 26 - Stripe Follow Along Nav
 > 2021/11/08 DONE  
 製作會隨著滑鼠移動而改變的選單效果，且移動時原選單不會消失，
-成果：[26 - Stripe Follow Along Nav](https://alice-nor.github.io/JavaScript30/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/) 
+成果：[26 - Stripe Follow Along Nav](https://alice-nor.github.io/JavaScript30/26%20-%20Stripe%20Follow%20Along%20Nav/) 
 
 ## CSS 筆記 ##
 
