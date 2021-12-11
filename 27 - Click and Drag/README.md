@@ -2,7 +2,7 @@
 # 27 - Click and Drag
 > 2021/12/11 DONE  
 可以以X軸拖曳移動的內容物。
-成果：[27 - Click and Drag](https://alice-nor.github.io/JavaScript30/26%20-%20Stripe%20Follow%20Along%20Nav/) 
+成果：[27 - Click and Drag](https://alice-nor.github.io/JavaScript30/27%20-%20Click%20and%20Drag/) 
 
 ## CSS 筆記 ##
 
