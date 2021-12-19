@@ -32,5 +32,7 @@ NO | 主題 | Demo | 延伸練習
 25  | Event Capture, Propagation, Bubbling and Once  | [DEMO](https://alice-nor.github.io/JavaScript30/25%20-%20Event%20Capture,%20Propagation,%20Bubbling%20and%20Once/)  
 26  | Stripe Follow Along Nav  | [DEMO](https://alice-nor.github.io/JavaScript30/26%20-%20Stripe%20Follow%20Along%20Nav/) 
 27  | Click and Drag  | [DEMO](https://alice-nor.github.io/JavaScript30/27%20-%20Click%20and%20Drag/)  
+28  | Video Speed Controller  | [DEMO](https://alice-nor.github.io/JavaScript30/28%20-%20Video%20Speed%20Controller/)  
+
 
 

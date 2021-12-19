@@ -2,7 +2,7 @@
 # 28 - Video Speed Controller
 > 2021/12/19 DONE  
 製作可控制影片速度的bar。算是 [Day11]](https://alice-nor.github.io/JavaScript30/11%20-%20Custom%20Video%20Player/index.html)  的延伸版。
-成果：[28 - Video Speed Controller](https://alice-nor.github.io/JavaScript30/27%20-%20Click%20and%20Drag/) 
+成果：[28 - Video Speed Controller](https://alice-nor.github.io/JavaScript30/28%20-%20Video%20Speed%20Controller/) 
 
 ## JavaScript 筆記 ##
 
